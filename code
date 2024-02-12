@@ -1,0 +1,18 @@
+#include <fstream>
+#include <iostream>
+
+using namespace std;
+
+int a, b, c, h;
+
+int main()
+{
+    cin >> a >> b >> c >> h;
+    
+    a = min(a, b);
+    a = min(a, c);
+    
+    cout << h * 100 / a;
+
+    return 0;
+}
